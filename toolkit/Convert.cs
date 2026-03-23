@@ -1,7 +1,8 @@
 ﻿namespace bkit;
 
 public class Convert {
-	public static void Main(string[] args) {
+	public static void Main(string[] args) => Run(args);
+	public static string Run(string[] args) {
 		List<string> argacc = [.. args];
 		Console.WriteLine("-- boxrend generalized format converter utility --");
 		if (argacc.Count == 0) {
@@ -17,10 +18,11 @@ public class Convert {
 			argacc.Insert(0, Console.ReadLine().Trim());
 		}
 		if (bmdl.Convert.Supports(argacc[0]))
-			bmdl.Convert.Main([.. argacc]);
+			return bmdl.Convert.Run([.. argacc]);
 		else if (bseq.Convert.Supports(argacc[0]))
-			bseq.Convert.Main([.. argacc]);
+			return bseq.Convert.Run([.. argacc]);
 		else if (btex.Convert.Supports(argacc[0]))
-			btex.Convert.Main([.. argacc]);
+			return btex.Convert.Run([.. argacc]);
+		return null;
 	}
 }
