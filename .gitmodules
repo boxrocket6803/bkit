@@ -7,3 +7,6 @@
 [submodule "source/convert/btex"]
 	path = source/convert/btex
 	url = https://github.com/boxrocket6803/btex.git
+[submodule "source/engine"]
+	path = source/engine
+	url = https://github.com/boxrocket6803/boxrend
