@@ -1,9 +1,9 @@
-[submodule "texture"]
-	path = texture
-	url = https://github.com/boxrocket6803/btex
-[submodule "sequence"]
-	path = sequence
-	url = https://github.com/boxrocket6803/bseq
-[submodule "model"]
-	path = model
-	url = https://github.com/boxrocket6803/bmdl
+[submodule "source/convert/bmdl"]
+	path = source/convert/bmdl
+	url = https://github.com/boxrocket6803/bmdl.git
+[submodule "source/convert/bseq"]
+	path = source/convert/bseq
+	url = https://github.com/boxrocket6803/bseq.git
+[submodule "source/convert/btex"]
+	path = source/convert/btex
+	url = https://github.com/boxrocket6803/btex.git
