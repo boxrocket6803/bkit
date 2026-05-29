@@ -1,0 +1,7 @@
+Title = "TOOLKIT",
+Resources = {
+	SearchPaths = [
+		"bkit",
+		"core"
+	]
+}

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "viewer": {
+      "commandName": "Project",
+      "commandLineArgs": "\"D:\\sbox_addons\\animkit2\\Assets\\sessions\\cryptid\\ithaca37\\draw.seq\""
+    }
+  }
+}

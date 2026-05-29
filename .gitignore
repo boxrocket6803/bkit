@@ -1,6 +1,3 @@
-/.vs
-/bin
-/obj
-/toolkit/.vs
-/toolkit/bin
-/toolkit/obj
+**/.vs
+**/bin
+**/obj
