@@ -2,7 +2,7 @@
     "rdocCaptureSettings": 1,
     "settings": {
         "autoStart": false,
-        "commandLine": "",
+        "commandLine": "\"D:\\sbox_addons\\animkit2\\Assets\\sessions\\cryptid\\ithaca37\\draw.seq\"",
         "environment": [
         ],
         "executable": "E:\\bkit\\source\\viewer\\bin\\viewer.exe",

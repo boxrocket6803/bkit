@@ -37,10 +37,6 @@
     <PackageReference Include="Silk.NET.Windowing" Version="2.22.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="scene\" />
-  </ItemGroup>
-
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="call $(ProjectDir)..\engine\post_build.bat $(ProjectDir)..\engine\ $(ProjectDir) $(OutDir)" />
   </Target>
