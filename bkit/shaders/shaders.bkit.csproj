@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.Build.NoTargets/3.7.134">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BRDF\Model.slang" />
+    <Compile Include="BRDF\Models\Ward.slang" />
+    <Compile Include="BRDF\Result.slang" />
+    <Compile Include="Utility\OrenNayar.slang" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+</Project>
