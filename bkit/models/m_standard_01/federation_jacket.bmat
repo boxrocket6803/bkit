@@ -1,1 +1,5 @@
 Shader = "shaders/generic.slang",
+Color	= "federation_jacket_color.btex",
+Normal	= "federation_jacket_normal.btex",
+Rough	= "federation_jacket_rough.btex",
+Metal	= "federation_jacket_metal.btex"

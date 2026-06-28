@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="bmdl/bmdl.csproj" />
+  <Project Path="bseq/bseq.csproj" />
+  <Project Path="btex/btex.csproj" />
+  <Project Path="convert.csproj" />
+</Solution>
