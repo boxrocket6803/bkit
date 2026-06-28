@@ -6,12 +6,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "viewer", "viewer.csproj", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "engine", "..\engine\engine.csproj", "{9E05C32F-9DD6-E321-AA79-8ACFEE76EEC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bmdl", "..\convert\bmdl\bmdl.csproj", "{331AFE6B-EB06-4ACA-8E3B-37D8E1577A71}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bseq", "..\convert\bseq\bseq.csproj", "{1111689E-EBBD-4626-B163-F6A639C62065}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "btex", "..\convert\btex\btex.csproj", "{EA27DCA4-038F-41F5-8B78-750A81A61DD3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shaders.bkit", "..\..\bkit\shaders\shaders.bkit.csproj", "{CB5D0794-98D1-C5A3-5784-642D456C9AA6}"
 EndProject
 Global
@@ -28,18 +22,6 @@ Global
 		{9E05C32F-9DD6-E321-AA79-8ACFEE76EEC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E05C32F-9DD6-E321-AA79-8ACFEE76EEC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E05C32F-9DD6-E321-AA79-8ACFEE76EEC6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{331AFE6B-EB06-4ACA-8E3B-37D8E1577A71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{331AFE6B-EB06-4ACA-8E3B-37D8E1577A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{331AFE6B-EB06-4ACA-8E3B-37D8E1577A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{331AFE6B-EB06-4ACA-8E3B-37D8E1577A71}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1111689E-EBBD-4626-B163-F6A639C62065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1111689E-EBBD-4626-B163-F6A639C62065}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1111689E-EBBD-4626-B163-F6A639C62065}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1111689E-EBBD-4626-B163-F6A639C62065}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EA27DCA4-038F-41F5-8B78-750A81A61DD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA27DCA4-038F-41F5-8B78-750A81A61DD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EA27DCA4-038F-41F5-8B78-750A81A61DD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EA27DCA4-038F-41F5-8B78-750A81A61DD3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CB5D0794-98D1-C5A3-5784-642D456C9AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CB5D0794-98D1-C5A3-5784-642D456C9AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB5D0794-98D1-C5A3-5784-642D456C9AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU

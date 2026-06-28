@@ -27,14 +27,13 @@ public struct Ward : BRDF {
 			return;
 		if (!translucent && l.Visibility <= 0.0)
 			return;
-
 		float LdotN = saturate(dot(l.Direction, s.NormalWs));
-        float VdotN = saturate(dot(s.ViewWs, s.NormalWs));
+		float VdotN = saturate(dot(s.ViewWs, s.NormalWs));
 		float HdotN = saturate(dot(normalize(s.ViewWs + l.Direction), s.NormalWs));
 		float3 Irradiance = l.Attenuation * l.Light.Color * l.Visibility;
 
-        // fresnel
-        float3 FresnelSpecular = Fresnel::Accurate(s.IOR, HdotN, s.Fresnel);
+		// fresnel
+		float3 FresnelSpecular = Fresnel::Accurate(s.IOR, HdotN, s.Fresnel);
 		FresnelSpecular *= l.Light.Specular;
 		float3 FresnelDiffuse = 1.0 - FresnelSpecular;
 

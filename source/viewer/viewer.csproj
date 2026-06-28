@@ -26,9 +26,6 @@
 
   <ItemGroup>
     <ProjectReference Include="../engine/engine.csproj" />
-    <ProjectReference Include="../convert/bmdl/bmdl.csproj" />
-    <ProjectReference Include="../convert/bseq/bseq.csproj" />
-    <ProjectReference Include="../convert/btex/btex.csproj" />
     <PackageReference Include="NVorbis" Version="0.10.5" />
     <PackageReference Include="Silk.NET.Input" Version="2.22.0" />
     <PackageReference Include="Silk.NET.OpenAL" Version="2.22.0" />
