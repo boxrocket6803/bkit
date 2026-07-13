@@ -1,1 +1,8 @@
-Shader = "shaders/generic.slang",
+Shader = "generic.slang",
+Color = "color.btex",
+RMA = {
+	R = "rough.btex",
+	G = 0.8,
+	B = 1,
+},
+Normal = "normal.btex",

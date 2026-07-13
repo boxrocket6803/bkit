@@ -26,7 +26,7 @@ public struct LightContext {
         //TODO actually load the light, fake light for now
         Light = LightData();
         Light.Position = float3(30, -70, 60);
-        Light.Color = float3(1, 0.5, 0.2) * 5;
+        Light.Color = 5;
 
         Direction = normalize(Light.Position - pos);
 	}

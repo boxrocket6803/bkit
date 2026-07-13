@@ -25,9 +25,9 @@ public struct SurfaceContext {
 		Emissive = 0.0;
 
 		Roughness = 0.7;
-        Sheen = 1.0;
+        Sheen = 0.0;
         SheenImportance = 1.0;
         IOR = 0.0;
-		Fresnel = 1.0;
+		Fresnel = 0.0;
 	}
 }

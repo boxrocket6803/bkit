@@ -35,7 +35,7 @@ public struct Ward : BRDF {
 		// fresnel
 		float3 FresnelSpecular = Fresnel::Accurate(s.IOR, HdotN, s.Fresnel);
 		FresnelSpecular *= l.Light.Specular;
-		float3 FresnelDiffuse = 1.0 - FresnelSpecular;
+		float3 FresnelDiffuse = 1.0;// - FresnelSpecular; //TODO fix this
 
 		// diffuse
 		float3 DiffuseColor = lerp(s.Diffuse, SheenColor, s.Roughness * pow(Fresnel::Schlick(HdotN), s.SheenImportance));

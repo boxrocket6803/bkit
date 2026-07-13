@@ -8,22 +8,24 @@ import Data.Vertex;
 import Data.Pixel;
 import Data.Camera;
 
+Sampler2D Color;
 Sampler2D Normal;
 
 PixelInput Vertex(VertexInput i) {
-    PixelInput o; //TODO move most of this into pixel input constructor?
-    o.PositionWs = i.PositionOs; //TODO transform these
-    o.NormalWs = i.NormalOs;
-    o.TexCoord = i.TexCoord;
-    o.PositionPs = Camera.Project(o.PositionWs);
-    return o;
+	PixelInput o; //TODO move most of this into pixel input constructor?
+	o.PositionWs = i.PositionOs; //TODO transform these
+	o.NormalWs = i.NormalOs;
+	o.TexCoord = i.TexCoord;
+	o.PositionPs = Camera.Project(o.PositionWs);
+	return o;
 }
 
 float4 Fragment(PixelInput i) {
-    SurfaceContext s = SurfaceContext(i);
-    //s.NormalWs = RMO.Sample(i.TexCoord).rgb;
-    s.Roughness = 0.9;
+	SurfaceContext s = SurfaceContext(i);
+	// s.NormalWs = RMO.Sample(i.TexCoord).rgb;
+	s.Diffuse = Color.Sample(i.TexCoord).rgb;
+	s.Emissive = Normal.Sample(i.TexCoord).rgb;
 
-    LightingResult l = IntegrateLighting(s, Ward(s));
-    return float4(Normal.Sample(i.TexCoord).rg, 1, 1);
+	LightingResult l = IntegrateLighting(s, Ward(s));
+	return float4(l.Final, 1);
 }
